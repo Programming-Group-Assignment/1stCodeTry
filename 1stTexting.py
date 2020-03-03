@@ -17,6 +17,7 @@ def Firstscene():
         StayinRoom()
 def StayinRoom():
     userInput0 = input("What to do?") #Go back to the Firstscene()
+        print("cause no one coming")
         WalkoutRoom()
     return userInput1
 
@@ -89,45 +90,50 @@ def ShowCorridor():
                 
                 
 def ContinueRunning(): #solutions path
-      userInput8 = input(#receptionchoice)#graphical reception or text with items to pick up
-          if userInput8 == "Look"
-                print("txt")
-                userInput9 = input(#yesorno) #look for items in reception desk
-                    if userInput9 == "Yes"
-                        print("txt")
-                        if Inventory == "Crutches":
-                            userInput10 = input(#HideorRunorCrutches)
-                            if userInput10 == "Crutches"
-                                print("txt")
-                                #map riddle
-                                userinput11 = input(#leftdoororrightdoor)
-                                    if userinput11 == "Left"
-                                        print("txt")
-                                    elif useinput11 == "Right"
-                                        print("txt")
-                                        return to userinput11                            
-                            elif userInput10 == "Hide"
-                                print("txt")
-                                HideBehindDesk()
-                            elif userInput10 == "Run"
-                                print("txt")
-                                #map riddle 
-                                userinput12 = input(#leftdoororrightdoor)
-                                    if userinput12 == "Left"
-                                        print("txt")
-                                    elif useinput12 == "Right"
-                                        print("txt")
-                                        return to userinput12
-                        elif Inventory != "Ctrutches":
-                            userInput10 = input(#HideorRun)
-                            if userInput10 == "Hide"
-                                print("txt")
-                                HideBehindDesk()
-                            elif userInput10 == "Run"
-                                print("txt")
-                    elif userInput9 == "No"
-          elif userInput8 == "Hide"                                 
-
-
+      userInput8 = input('Look or hide')#graphical reception or text with items to pick up
+          if userInput8 == "Look" #look for items
+                print("search for something")
+                PichupMap()
+          elif userInput8 == "Hide behind desk"
+                print("Zombie is coming")
+                ContinueRunning()
+                
+def PickupMap():
+    UserInput9 = input("Pick up Map, Pencils ,Paper ,Staple ,paperclip,")  # look for items in reception desk#Maybe str() need
+    while UserInput9 != "Map":
+            print("This item will not help you")
+            return PickupMap()
+    if UserInput9 == "Map":
+        Inventory = Inventory + "Map"
+                        
+                
+def RuntoQuiz():
+    userInput10 = input("Hide or Run?:")
+          if userInput10 == "Hide"
+                RuntoQuiz()
+          elif userInput10 == "Run"
+                #Graphical window quiz 
+                #select a)b)c) of pictures
+def FinalDoor():
+    userInput22 = input("Left door to freedom or Right door to freedom?")
+       if userInput22 == "Left"
+                print("HAHA Almost")
+                FinaDoor()
+       elif userInput22 == "Right"
+                print("WIN") #insert graphics picture win a nice finish
+                
+                 
 def main():
+  count = 0
+  Inventory = []               
+  def Firstscene():              
+  def StayinRoom(): 
+  def WalkoutRoom():              
+  def FightZombie():
+  def RunAwayZombie():              
+  def ShowCorridor():
+  def ContinueRunning():              
+  def PickupMap():              
+  def RuntoQuiz():
+  def FinalDoor():              
 main()
