@@ -1,4 +1,4 @@
-
+from graphics import*
 count = 0 #Survival count needs to be implemented in all definitions
 inventory = ""
 #All Story related texts have to be in seperate def function() 
@@ -95,10 +95,36 @@ def ContinueRunning(): #solutions path
                 userInput9 = input(#yesorno) #look for items in reception desk
                     if userInput9 == "Yes"
                         print("txt")
-                    if Inventory == "Crutches":
-                        userInput10 = input(#HideorRunorCrutches)
-                            elif userInput10 = "Hide"
-                            elif userInput10 = "Run"
+                        if Inventory == "Crutches":
+                            userInput10 = input(#HideorRunorCrutches)
+                            if userInput10 == "Crutches"
+                                print("txt")
+                                #map riddle
+                                userinput11 = input(#leftdoororrightdoor)
+                                    if userinput11 == "Left"
+                                        print("txt")
+                                    elif useinput11 == "Right"
+                                        print("txt")
+                                        return to userinput11                            
+                            elif userInput10 == "Hide"
+                                print("txt")
+                                HideBehindDesk()
+                            elif userInput10 == "Run"
+                                print("txt")
+                                #map riddle 
+                                userinput12 = input(#leftdoororrightdoor)
+                                    if userinput12 == "Left"
+                                        print("txt")
+                                    elif useinput12 == "Right"
+                                        print("txt")
+                                        return to userinput12
+                        elif Inventory != "Ctrutches":
+                            userInput10 = input(#HideorRun)
+                            if userInput10 == "Hide"
+                                print("txt")
+                                HideBehindDesk()
+                            elif userInput10 == "Run"
+                                print("txt")
                     elif userInput9 == "No"
           elif userInput8 == "Hide"                                 
 
